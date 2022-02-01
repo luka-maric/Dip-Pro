@@ -1,6 +1,6 @@
 # Upute za korištenje
 
-Cilj projekta je pokretanje Stepper motora uz pomoć TMC2209 drivera u svrhu pomicanja montirane multispektralne kamere.
+Cilj ovog segmenta projekta je pokretanje Stepper motora uz pomoć TMC2209 drivera u svrhu pomicanja montirane multispektralne kamere.
 
 Korišten je Raspberry Pi Model B+ i Model 3 uz Raspberry Pi OS. Konekcija sa računalom je preko ethernet kabla. 
 
