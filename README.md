@@ -67,4 +67,10 @@ TMC2209 je driver koji ima jedan izlaz za UART konekciju te preko njega provodi 
 
 ![](Slike/uart.png)
 
+## Problematika: 
+
+Nakon hardware povezivanja te instalacije software podloge, TMC2209 driver i Raspberry Pi naizgled ne izmjenjuju dovoljan broj bitova. Konkretno se na RP ne prikazuju zadnja 4 bita koje šalje driver, odnosno u nekim slučajevima primi nekoliko bitova ali je generalno 0 što ukazuje na grešku sa UART konekcijom.
+
+![](Slike/error1.png)
+
 
