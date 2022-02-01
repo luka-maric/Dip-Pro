@@ -34,9 +34,14 @@ Potrebno je skinuti i python modul "Bitstring":
 pip3 install bitstring
 ```
 
-Pošto se modul instalira na "/home/pi/.local/lib/python..."" a skripte rade samo uz pokretanje kao "root user" uz "sudo python3 skripta.py", dolazi do problema prilikom pokretanja. Zaobilazak je aktivacija virtualnog okruženja te pokretanje skripte nakon instalacije modula tamo:
+Pošto se modul instalira na "/home/pi/.local/lib/python..."" a skripte rade samo uz pokretanje kao "root user" uz "sudo python3 skripta.py", dolazi do problema prilikom pokretanja. Zaobilazak je aktivacija virtualnog okruženja te pokretanje skripte nakon instalacije pyftpdlib (ovo radimo u virtualnom okruženju da ne "slomi" python okruženje na uređaju):
 
 ```bash
+#stvaranje virtualnog okruženja
+python3 -m venv env-ftp 
+#instaliranje pyftpdlib unutar okruženja što omogućuje pokretanje svih modula za root usera
+env-ftp/bin/python -m pip install pyftpdlib
+#aktivacija virtualnog okruženja iz kojeg pokrećemo skripte
 source env-ftp/bin/activate
 ```
 
